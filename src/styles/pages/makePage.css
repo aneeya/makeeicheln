@@ -1,0 +1,168 @@
+form.make-character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90rem;
+  height: 45rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border: 2px solid var(--color-orange-1);
+  border-radius: 2rem;
+}
+
+.makeCharacter-form-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 90rem;
+  height: 30rem;
+}
+
+form.make-character fieldset {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+  width: 38%;
+  height: 12rem;
+  border: none;
+}
+
+form.make-character fieldset:nth-of-type(1),
+form.make-character fieldset:nth-of-type(2) {
+  margin-bottom: 3rem;
+}
+
+
+form.make-character legend {
+  margin-top: -1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-english-1);
+  color: var(--color-main);
+}
+
+form.make-character label {
+  position: relative;
+  width: 8rem;
+  height: 7rem;
+  margin-left: 1.8rem;
+  cursor: pointer;
+}
+
+.ui-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 7rem;
+  margin-right: 3rem;
+  border: 2px solid var(--color-orange-0);
+  border-radius: 50%;
+  clip-path: polygon(0 50%, 35% 0, 60% 0, 100% 50%, 100% 100%, 0 100%);
+}
+
+.ui-ear-left {
+  position: absolute;
+  top: -0.3%;
+  left: -2.5%;
+  z-index: 2;
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-orange-0);
+  border-radius: 50%;
+  clip-path: polygon(0 0, 72% 0%, 0 76%);
+}
+
+.ui-ear-right {
+  position: absolute;
+  top: -0.3%;
+  right: -2.5%;
+  z-index: 2;
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-orange-0);
+  border-radius: 50%;
+  clip-path: polygon(28% 0, 100% 0%, 100% 76%);
+}
+
+.ico-eyes {
+  width: 5rem;;
+}
+
+.ico-mouth {
+  width: 2.5rem;
+}
+
+.ico-acc {
+  width: 4rem;
+}
+
+.cheek {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.cheek-peach {
+  color: var(--color-peach);
+}
+
+.cheek-pink {
+  color: var(--color-pink);
+}
+
+.cheek-purple {
+  color: var(--color-purple-1);
+}
+
+form.make-character label input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.makeCharacter-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  height: 5rem;
+  margin-top: 2rem;
+}
+
+.makeCharacter-buttons button {
+  width: 8rem;
+  height: 5rem;
+  background: var(--color-main);
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.makeCharacter-buttons button:hover,
+.makeCharacter-buttons button:focus {
+  border: 1px solid var(--color-purple-0);
+}
+
+
+.makeCharacter-display {
+  width: 30rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background: var(--color-orange-1);
+  border-radius: 8rem;
+}
