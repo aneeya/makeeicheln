@@ -25,8 +25,11 @@ class Combine {
     if(name !== 'accessories' && items[name] !== null) {
       const removeEl = items[name]
       this.$display.removeChild(removeEl)
-    } else if(name === 'accessories' && items[name].length === 3) {
-      return
+    } else if(name === 'accessories') {
+      if(items[name].length === 3) return
+      
+      const includeItem = Array.from(items[name]).find( el => el.src === this.imgSrc) 
+      if(includeItem) return
     }
 
     let addItem = this.createEl(name, value)
