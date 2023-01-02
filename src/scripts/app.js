@@ -1,3 +1,4 @@
+import ButtonMotion from "./modules/buttonsMotion.js";
 import Combine from "./modules/combine.js";
 import HoverColor from "./modules/hover.js";
 
@@ -12,4 +13,8 @@ const selects = (target) => document.querySelectorAll(target);
 
   new HoverColor($input, overColor, '#ffff')
   new Combine($input)
+});
+
+[ ...select('.makeCharacter-buttons').children ].forEach($button => {
+  new ButtonMotion($button)
 })

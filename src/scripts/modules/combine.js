@@ -1,6 +1,10 @@
 class Combine {
   constructor($input) {
     this.$input = $input
+    this.imgSrc = 
+      $input.tagName === "INPUT" 
+      ? $input.previousElementSibling.src
+      : ''
     this.$display = document.querySelector('.makeCharacter-display')
 
     this.bindEvent()
@@ -9,41 +13,48 @@ class Combine {
   previewCombine(e) {
     if(e.target.dataset.value !== 'combine-item') return
 
+    const { value, name} = e.target
+    
     const items = {
       eyes: document.querySelector('.combine-eyes'),
       mouth: document.querySelector('.combine-mouth'),
-      accessories: document.querySelector('.combine-accessories'),
+      accessories: document.querySelectorAll('.combine-accessories'),
       cheeks: document.querySelector('.combine-cheeks')
     }
-
     
-    if(items[e.target.name] !== null) {
-      const removeEl = items[e.target.name]
+    if(name !== 'accessories' && items[name] !== null) {
+      const removeEl = items[name]
       this.$display.removeChild(removeEl)
+    } else if(name === 'accessories' && items[name].length === 3) {
+      return
     }
 
-    let addItem;
+    let addItem = this.createEl(name, value)
 
-    if(e.target.name === 'cheeks') {
+    this.$display.append(addItem)
+  }
+
+  createEl(type, itemDetail) {
+    let addItem;
+    if(type === 'cheeks') {
       addItem = document.createElement('div')
-      addItem.className = 'combine-cheeks'
+
       const leftCheeks = document.createElement('div')
-      leftCheeks.className = `combine-cheek combine-${e.target.value}`
+      leftCheeks.className = `combine-cheek combine-${itemDetail}`
       const rightCheeks = document.createElement('div')
-      rightCheeks.className = `combine-cheek combine-${e.target.value}`
+      rightCheeks.className = `combine-cheek combine-${itemDetail}`
 
       addItem.append(leftCheeks)
       addItem.append(rightCheeks)
     } else {
       addItem = document.createElement('img')
-      addItem.src = e.target.previousElementSibling.src
-      addItem.className = `combine-${e.target.name}`
-      if(e.target.name === 'accessories') {
-        addItem.classList.add(`combine-${e.target.value}`)
-      }
+      addItem.src = this.imgSrc
     }
-    
-    this.$display.append(addItem)
+
+    addItem.className = `combine-${type}`
+    if(type === 'accessories') addItem.classList.add(`combine-${itemDetail}`)
+
+    return addItem
   }
 
   bindEvent() {
