@@ -27,8 +27,8 @@
   // })
 
  class HoverColor {
-    constructor($container, overColor, outColor) {
-      this.$container = $container
+    constructor($input, overColor, outColor) {
+      this.$input = $input
       this.overColor = overColor
       this.outColor = outColor
       this.cheekColor = {
@@ -41,18 +41,15 @@
     }
 
     changeColor(domList, bkcolor, bdst) {
-      domList[0].style.background = bkcolor
-      domList[1].style.background = bkcolor
-      domList[2].style.background = bkcolor
-      
-      domList[0].style.border = bdst
-      domList[1].style.border = bdst
-      domList[2].style.border = bdst
+      [ ...domList ].forEach( dom => {
+        dom.style.background = bkcolor
+        dom.style.border = bdst
+      })
     }
 
     changeOverColor(e, color) {
-      if(e.target.name === 'cheek') {
-        this.$container.previousElementSibling.style.color = 'white'
+      if(e.target.name === 'cheeks') {
+        this.$input.previousElementSibling.style.color = 'var(--color-white)'
       }
         
       const domList = e.target.closest('label').children
@@ -60,18 +57,18 @@
     }
 
     changeOutColor(e, color) {
-      if(e.target.name === 'cheek') {
+      if(e.target.name === 'cheeks') {
         const ckColor = e.target.value
-        this.$container.previousElementSibling.style.color = this.cheekColor[ckColor]
+        this.$input.previousElementSibling.style.color = this.cheekColor[ckColor]
       }
         
       const domList = e.target.closest('label').children
-      this.changeColor(domList, color, '2px solid var(--color-main)')
+      this.changeColor(domList, color, '2px solid var(--color-orange-0)')
     }
 
     bindEvent() {
-      this.$container.addEventListener('mouseover', (e) => this.changeOverColor(e, this.overColor))
-      this.$container.addEventListener('mouseout', (e) => this.changeOutColor(e, this.outColor))
+      this.$input.addEventListener('mouseover', (e) => this.changeOverColor(e, this.overColor))
+      this.$input.addEventListener('mouseout', (e) => this.changeOutColor(e, this.outColor))
     }
   }
 

@@ -1,4 +1,4 @@
-class ButtonMotion {
+class MakeCharacterPreview {
   constructor($button) {
     this.$button = $button
 
@@ -30,4 +30,4 @@ class ButtonMotion {
   }
 }
 
-export default ButtonMotion
+export default MakeCharacterPreview

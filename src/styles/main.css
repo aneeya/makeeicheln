@@ -4,4 +4,7 @@
 
 @import url(/src/styles/pages/mainPage.css);
 @import url(/src/styles/pages/makePage.css);
+@import url(/src/styles/pages/makePage-makeName.css);
 @import url(/src/styles/pages/viewPage.css);
+
+@import url(/src/styles/common/modal.css);

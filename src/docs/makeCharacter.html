@@ -153,5 +153,29 @@
     </form>
     <div class="makeCharacter-display"></div>
   </main>
+  <section class="makeCharacter-makename">
+    <h2>Give your character name</h2>
+    <form action="/" method="post" class="make-character-name">
+      <div>
+        <div>
+          <label for="make-name">NAME</label>
+          <input type="text" name="name" id="make-name" required placeholder="eicheln"/>
+        </div>
+        <div>
+          <label for="make-mbti">MBTI</label>
+          <input type="text" name="mbti" id="make-mbti" required placeholder="cute"/>
+        </div>
+        <div>
+          <label for="make-introduce">INTRODUCE</label>
+          <textarea name="introduce" id="make-introduce" maxlength="50" placeholder="hello my name is eicheln"></textarea>
+        </div>
+      </div>
+      <div class="makeCharacter-name-buttons">
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <button type="button">cancel</button>
+      </div>
+    </form>
+  </section>
 </body>
 </html>

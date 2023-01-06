@@ -1,0 +1,67 @@
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#modal > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45rem;
+  height: 30rem;
+  background: var(--color-white);
+  border-radius: 3rem;
+}
+
+#modal div[role="img"] {
+  width: 10rem;
+  height: 10rem;
+  background: var(--color-main) url(/src/assets/eicheln.png) center / 8rem no-repeat;
+  border: 2px solid var(--color-purple-0);
+  border-radius: 50%;
+}
+
+h2#modal-question {
+  color: var(--color-purple-0);
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+#modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17rem;
+  height: 5rem;
+}
+
+#modal-buttons button {
+  width: 8rem;
+  height: 5rem;
+  background: var(--color-orange-1);
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  color: var(--color-main);
+}
+
+#modal-buttons button:first-child {
+  background: var(--color-main);
+  color: var(--color-white);
+}
+
+#modal-buttons button:hover,
+#modal-buttons button:focus {
+  border: 1px solid var(--color-purple-0);
+  box-shadow: 1px 2px var(--color-purple-0);
+}
+
