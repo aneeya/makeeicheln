@@ -1,11 +1,12 @@
-import submitCharacter from "./form/submitCharacter.js";
-import MakeCharacterPreview from "./buttons/makeCharacterPreview.js";
-import makeCharacterName from "./buttons/makeCharacterName.js";
+
+import MakeCharacterPreview from "./buttons/makeCharacterCombine.js";
 import Combine from "./modules/combine.js";
 import HoverColor from "./modules/hover.js";
 import { select, selects } from "./modules/domSelect.js";
+import submitNewCharacter from "./request/makeCharacter.js";
+import makeCharacterCancel from "./buttons/makeCharacterCancel.js";
 
-[ ...selects('form.make-character input') ].forEach( $input => {
+[ ...selects('.makeCharacter-combine-inputs input') ].forEach( $input => {
   let overColor = 'var(--color-orange-0)'
   if($input.value === 'peach') overColor = '#dd8781'
   if($input.value === 'pink') overColor = '#cc6688'
@@ -19,6 +20,6 @@ import { select, selects } from "./modules/domSelect.js";
   new MakeCharacterPreview($button)
 })
 
-select('.make-character').addEventListener('submit', submitCharacter)
+select('.makeCharacter').addEventListener('submit', submitNewCharacter)
 
-select('.makeCharacter-name-buttons').addEventListener('click', makeCharacterName)
+select('.makeCharacter-name-buttons').addEventListener('click', makeCharacterCancel)

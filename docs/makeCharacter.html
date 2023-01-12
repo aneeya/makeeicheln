@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Hind:wght@300;400;500;600;700&family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+  <script type="module" src="scripts/app.js"></script>
+  <title>eicheln</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>
+        <a href="/">
+          <img src="assets/logo.png" alt="홈으로가기">
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="mycharacters">MyCharacters</a>
+          </li>
+          <li>
+            <a href="makecharacter">MakeCharacter</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form class="makeCharacter">
+      <div class="makeCharacter-combine">
+        <div class="makeCharacter-combine-inputs">
+          <fieldset>
+            <legend >eyes</legend>
+              <label>
+                <div class="ui-ear-left"></div>
+                <div class="ui-ear-right"></div>
+                <div class="ui-select">
+                  <img src="assets/eyes/eye1.png" alt="속눈썹있는동글한눈" class="ico-eyes">
+                  <input type="radio" data-value="combine-item" value="eye1" name="eyes">
+                </div>
+              </label>
+              <label>
+                <div class="ui-ear-left"></div>
+                <div class="ui-ear-right"></div>
+                <div class="ui-select">
+                  <img src="assets/eyes/eye2.png" alt="반짝이는동글한눈" class="ico-eyes">
+                  <input type="radio" data-value="combine-item" value="eye2" name="eyes">
+                </div>
+              </label>
+              <label>
+                <div class="ui-ear-left"></div>
+                <div class="ui-ear-right"></div>
+                <div class="ui-select">
+                  <img src="assets/eyes/eye3.png" alt="긴눈" class="ico-eyes">
+                  <input type="radio" data-value="combine-item" value="eye3" name="eyes">
+                </div>
+              </label>
+          </fieldset>
+          <fieldset>
+            <legend>mouth</legend>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/mouth/mouth1.png" alt="삼각김밥입" class="ico-mouth">
+                <input type="radio" data-value="combine-item" value="mouth1" name="mouth">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/mouth/mouth2.png" alt="작고동글한입" class="ico-mouth">
+                <input type="radio" data-value="combine-item" value="mouth2" name="mouth">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/mouth/mouth3.png" alt="웃는입" class="ico-mouth">
+                <input type="radio" data-value="combine-item" value="mouth3" name="mouth">
+              </div>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>accessories</legend>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/accessories/bangs.png" alt="앞머리" class="ico-acc">
+                <input type="checkbox" data-value="combine-item" value="bangs" name="accessories">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/accessories/beard.png" alt="수염" class="ico-acc">
+                <input type="checkbox" data-value="combine-item" value="beard" name="accessories">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <img src="assets/accessories/sunglasses.png" alt="선글래스" class="ico-acc">
+                <input type="checkbox" data-value="combine-item" value="sunglasses" name="accessories">
+              </div>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>cheek</legend>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <div class="cheek cheek-peach">peach</div>
+                <input type="radio" data-value="combine-item" value="peach" name="cheeks">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <div class="cheek cheek-pink">pink</div>
+                <input type="radio" data-value="combine-item" value="pink" name="cheeks">
+              </div>
+            </label>
+            <label>
+              <div class="ui-ear-left"></div>
+              <div class="ui-ear-right"></div>
+              <div class="ui-select">
+                <div class="cheek cheek-purple">purple</div>
+                <input type="radio" data-value="combine-item" value="purple" name="cheeks">
+              </div>
+            </label>
+          </fieldset>
+        </div>
+        <div class="makeCharacter-buttons">
+          <button type="button">make</button>
+          <button type="button">prev</button>
+          <button type="reset">reset</button>
+        </div>
+      </div>
+      <div class="makeCharacter-naming">
+        <h2>Give your character name</h2>
+        <div class="makeCharacter-naming-inputs">
+          <div>
+            <label for="make-name">NAME</label>
+            <input type="text" name="name" id="make-name" required placeholder="eicheln"/>
+          </div>
+          <div>
+            <label for="make-mbti">MBTI</label>
+            <input type="text" name="mbti" id="make-mbti" required placeholder="cute"/>
+          </div>
+          <div>
+            <label for="make-introduce">INTRODUCE</label>
+            <textarea name="introduce" id="naming-introduce" maxlength="50" placeholder="hello my name is eicheln"></textarea>
+          </div>
+        </div>
+        <div class="makeCharacter-name-buttons">
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+          <button type="button">cancel</button>
+        </div>
+      </div>
+    </form>
+    <div class="makeCharacter-display"></div>
+  </main>
+  
+</body>
+</html>

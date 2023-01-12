@@ -1,10 +1,10 @@
-@import url(/src/styles/theme.css);
+@import url(theme.css);
 
-@import url(/src/styles/header.css);
+@import url(header.css);
 
-@import url(/src/styles/pages/mainPage.css);
-@import url(/src/styles/pages/makePage.css);
-@import url(/src/styles/pages/makePage-makeName.css);
-@import url(/src/styles/pages/viewPage.css);
+@import url(pages/mainPage.css);
+@import url(pages/makePage-combine.css);
+@import url(pages/makePage-naming.css);
+@import url(pages/viewPage.css);
 
-@import url(/src/styles/common/modal.css);
+@import url(common/modal.css);

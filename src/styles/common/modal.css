@@ -25,7 +25,7 @@
 #modal div[role="img"] {
   width: 10rem;
   height: 10rem;
-  background: var(--color-main) url(/src/assets/eicheln.png) center / 8rem no-repeat;
+  background: var(--color-main) url(../../assets/eicheln.png) center / 8rem no-repeat;
   border: 2px solid var(--color-purple-0);
   border-radius: 50%;
 }

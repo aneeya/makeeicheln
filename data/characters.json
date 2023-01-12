@@ -1,0 +1,37 @@
+[{
+  "eyes": "eye1",
+  "accessories": [],
+  "mouth": "mouth1",
+  "cheeks": "peach",
+  "name": "cuy",
+  "mbti": "emfp",
+  "introduce": "hi",
+  "id": "4cb1d09c-f98b-4635-a3c2-6c09e89e3884"
+}, {
+  "eyes": "eye3",
+  "mouth": "mouth1",
+  "accessories": "sunglasses",
+  "cheeks": "purple",
+  "name": "못난이",
+  "mbti": "enfp",
+  "introduce": "a",
+  "id": "821a0be3-4903-4ef7-8efb-5a912d4c4a0a"
+}, {
+  "eyes": "eye3",
+  "mouth": "mouth1",
+  "accessories": "sunglasses",
+  "cheeks": "peach",
+  "name": "ㅇ",
+  "mbti": "ㅁ",
+  "introduce": "ㄴ",
+  "id": "abe49889-7e86-4b72-b196-6303045138c0"
+}, {
+  "eyes": "eye2",
+  "mouth": "mouth1",
+  "accessories": ["beard"],
+  "cheeks": "pink",
+  "name": "깜찌기",
+  "mbti": "infp",
+  "introduce": "hi",
+  "id": "aaff31d6-5bdb-4838-9e9d-e9287317983f"
+}]
