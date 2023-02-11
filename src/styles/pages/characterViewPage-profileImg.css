@@ -1,0 +1,39 @@
+.myCharacter-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.myCharacter-img img:not(img:last-child) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.selected-cheeks {
+  width: 12rem;
+}
+
+.selected-eyes {
+  top: 58%;
+}
+
+.selected-mouth {
+  top: 70%;
+}
+
+#selected-accessory-bangs {
+  top: 48%;
+}
+
+#selected-accessory-beard {
+  top: 68%;
+}
+
+#selected-accessory-sunglasses {
+  top: 50%
+}

@@ -34,4 +34,13 @@
   "mbti": "infp",
   "introduce": "hi",
   "id": "aaff31d6-5bdb-4838-9e9d-e9287317983f"
+}, {
+  "eyes": "eye2",
+  "mouth": "mouth2",
+  "accessories": ["bangs", "beard"],
+  "cheeks": "peach",
+  "name": "깜찍이",
+  "mbti": "ISFP",
+  "introduce": "안녕하세요 깜찍이에여\n\n",
+  "id": "c36b341b-aa1b-4e8f-93b9-2ba134dcf5b6"
 }]

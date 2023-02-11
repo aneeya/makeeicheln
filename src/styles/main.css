@@ -5,6 +5,7 @@
 @import url(pages/mainPage.css);
 @import url(pages/makePage-combine.css);
 @import url(pages/makePage-naming.css);
-@import url(pages/viewPage.css);
+@import url(pages/charactersViewPage.css);
+@import url(pages/characterViewPage-profileImg.css);
 
 @import url(common/modal.css);

@@ -1,0 +1,59 @@
+#myCharacters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.myCharacter {
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  height: 16rem;
+  padding-left: 2rem;
+  border: 2.2px solid var(--color-orange-1);
+  border-radius: 3rem ;
+}
+
+.myCharacter:hover,
+.myCharacter:focus {
+  background: var(--color-orange-2);
+  border-color: var(--color-orange-2);
+}
+
+.myCharacter-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32rem;
+  height: 100%;
+  margin-left: 2rem;
+}
+
+.myCharacter-description-name {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.myCharacter-description-mbti {
+  margin-bottom: 0.5rem;
+}
+
+.myCharacter-description-mbti span {
+  font-size: 1.5rem;
+  color: var(--color-purple-0);
+  font-family: var(--font-english-0);
+}
+
+.myCharacter-description-mbti span:first-child {
+  margin-right: 0.8rem;
+}
+
+.myCharacter-description-introduce {
+  font-size: 2rem;
+  color: var(--color-purple-0);
+}
